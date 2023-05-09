@@ -34,7 +34,7 @@ class DetermineColor:
             # msg.frame_id = '+1' # CCW (Blue background)
             # msg.frame_id = '0'  # STOP
             # msg.frame_id = '-1' # CW (Red background)
-            image = cv2.resize(image, (200, 125))
+            image = cv2.resize(image, (50, 30))
             b, g, r = cv2.split(image)
             rows, columns = b.shape
             c_red, c_blue, c_green, c_yellow, c_magenta, c_cyan, c_white = 0, 0, 0, 0, 0, 0, 0
