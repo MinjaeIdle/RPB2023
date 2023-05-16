@@ -3,6 +3,7 @@ from cv_bridge import CvBridge, CvBridgeError
 from std_msgs.msg import Header
 import rospy
 import cv2
+import numpy as np
 
 
 class DetermineColor:
