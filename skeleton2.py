@@ -34,7 +34,7 @@ class DetermineColor:
             # msg.frame_id = '+1' # CCW (Blue background)
             # msg.frame_id = '0'  # STOP
             # msg.frame_id = '-1' # CW (Red background)
-            b, g, r = cv2.split(img)
+            b, g, r = cv2.split(image)
             bgr = np.stack([b, g, r], axis=-1)
             colors = np.array([
                 [0, 0, 255],  # Red
